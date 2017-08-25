@@ -1,7 +1,11 @@
 import Vue from 'vue';
 import Quasar, * as All from 'quasar-framework';
 import {Platform} from 'quasar-framework';
-import './cordova.js';
+
+/**
+ * This is not needed anymore due new cordova bootloader strategy
+ */
+// import './cordova.js';
 
 /**
  * Service worker disabled due using cache manifest for compatibilty with iOS

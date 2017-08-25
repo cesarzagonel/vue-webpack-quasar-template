@@ -1,0 +1,37 @@
+{
+  "name": "vue-quasar-template",
+  "version": "1.0.0",
+  "description": "Simple vue quasar template.",
+  "author": "Cesar Zagonel",
+  "license": "MIT",
+  "scripts": {
+    "start": "http-server",
+    "dev": "webpack-dev-server --open",
+    "precache": "sw-precache --config precache.config.js",
+    "manifest": "gulp manifest",
+    "build": "webpack -p && sw-precache --config precache.config.js && gulp manifest"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.0",
+    "clean-webpack-plugin": "^0.1.16",
+    "css-loader": "^0.28.5",
+    "file-loader": "^0.11.2",
+    "gulp": "^3.9.1",
+    "gulp-manifest": "^0.1.1",
+    "style-loader": "^0.18.2",
+    "sw-precache": "^5.2.0",
+    "url-loader": "^0.5.9",
+    "vue-loader": "^13.0.4",
+    "vue-template-compiler": "~2.3.4",
+    "webpack": "^3.5.5",
+    "webpack-dev-server": "^2.7.1"
+  },
+  "dependencies": {
+    "http-server": "^0.10.0",
+    "quasar-extras": "^0.0.7",
+    "quasar-framework": "^0.14.1",
+    "vue": "~2.3.4"
+  }
+}
